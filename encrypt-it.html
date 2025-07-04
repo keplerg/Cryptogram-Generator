@@ -23,26 +23,42 @@
       <p>
         <strong>Cipher Type: </strong>
         <select id="cipher-type">
+          <option value="cryptogram">Cryptogram</option>
           <option value="shift">Shift Cipher</option>
+          <option value="morse">Morse Code</option>
           <option value="random">Randomized</option>
         </select>
+        <label id="offset-label">
+          <strong>Offset:</strong>
+          <input type="number" id="offset" name="offset" min=0 max=25 value="1"/>
+        </label>
+        <label id="ascii-label">
+          <strong>Ascii:</strong>
+          <input type="checkbox" id="ascii" name="ascii" value="1"/>
+        </label>
       </p>
       <p>
         <strong>Font Size: </strong>
         <label>
-          <input checked type="radio" name="text-size" value="12pt">12pt
+          <input checked type="radio" name="text-size" value="14pt">14pt
         </label>
         <label>
-          <input type="radio" name="text-size" value="24pt">24pt
+          <input type="radio" name="text-size" value="16pt">16pt
+        </label>
+        <label>
+          <input type="radio" name="text-size" value="18pt">18pt
+        </label>
+        <label>
+          <input type="radio" name="text-size" value="20pt">20pt
         </label>
       </p>
       <p>
         <label>
           <strong>All-Caps:</strong>
-          <input id="all-caps" type="checkbox" name="uppercase-output" value="uppercase">
+          <input id="all-caps" type="checkbox" name="uppercase-output" value="uppercase" checked="checked">
         </label>
       </p>
-      <button id="encrypt-it" onclick="handleClick()">Encrypt It!</button>
+      <button id="encrypt-it">Encrypt It!</button>
       <button id="reset" type="reset">Reset</button>
     </fieldset>
     <!-- Result Display Area -->

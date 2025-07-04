@@ -53,7 +53,8 @@ strong {
   line-height: 26pt;
 }
 
-select {
+select,
+input[type="number"] {
   padding: 2pt;
   margin: 0 14pt;
   font-size: 12pt;
@@ -61,7 +62,7 @@ select {
 
 /* Fieldset */
 
-button, fieldset, select, textarea, #result {
+button, fieldset, input, select, textarea, #result {
   border-radius: 5pt;
 }
 
@@ -131,6 +132,14 @@ h2, p {
 p {
   animation-delay: 0.2s;
   margin: 0;
+}
+
+#offset-label {
+  display: none;
+}
+
+#ascii-label {
+  display: none;
 }
 
 /*
