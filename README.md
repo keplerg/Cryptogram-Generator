@@ -1,4 +1,5 @@
-# Cloned from[https://github.com/Myari626/Cryptogram-Generator.git]
+# Cryptogram Generator
+Cloned from[https://github.com/Myari626/Cryptogram-Generator.git]
 
 Added:
 - Cryptogram encoding (random letter substitution)
